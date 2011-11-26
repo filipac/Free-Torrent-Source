@@ -1,0 +1,46 @@
+.iconspan{
+float: right;
+margin: 3px;
+cursor:hand;
+cursor:pointer;
+font-weight: bold;
+}.icongroup1{
+width: 500px;
+}.eg-bar {
+background: #ECE9D8;
+}
+#popitmenu{
+position: absolute;
+background-color: white;
+border:1px solid black;
+font: normal 12px Verdana;
+line-height: 18px;
+z-index: 100;
+visibility: hidden;
+}
+
+#popitmenu a{
+text-decoration: none;
+padding-left: 6px;
+color: black;
+display: block;
+}
+
+#popitmenu a:hover{ /*hover background color*/
+background-color: #CCFF9D;
+}
+table.nobordermain, table.noborderouter {
+  background-color: #F5F4EA;//#F4F4F0;
+  border: 0px none
+  
+}
+
+td.embedded {
+   border: none;
+   padding: 6px;
+  text-align: left;
+}
+A.ssmItems:link		{color:black;text-decoration:none;}
+A.ssmItems:hover	{color:black;text-decoration:none;}
+A.ssmItems:active	{color:black;text-decoration:none;}
+A.ssmItems:visited	{color:black;text-decoration:none;}

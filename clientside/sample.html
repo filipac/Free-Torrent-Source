@@ -1,0 +1,76 @@
+<html>
+<head>
+
+<title>Dropdown Sample</title>
+
+<script type="text/javascript" src="dropdown.js"></script>
+
+<style type="text/css">
+
+div.sample_attach, a.sample_attach
+{
+  width: 100px;
+  border: 1px solid black;
+  background: #FFFFEE;
+  padding: 0px 5px;
+  font-weight: 900;
+  color: #008000;
+}
+
+a.sample_attach
+{
+  display: block;
+  border-bottom: none;
+  text-decoration: none;
+}
+
+form.sample_attach
+{
+  position: absolute;
+  visibility: hidden;
+  border: 1px solid black;
+  background: #FFFFEE;
+  padding: 0px 5px 2px 5px;
+}
+
+</style>
+
+</head>
+<body>
+
+<h3>Dropdown Sample</h3>
+
+<!-- Dropdown Menu -->
+
+<div id="menu_parent" class="sample_attach">
+Main Menu
+</div>
+<div id="menu_child" style="position: absolute; visibility: hidden;">
+<a class="sample_attach" href="#">Item 1</a>
+<a class="sample_attach" href="#">Item 2</a>
+<a class="sample_attach" style="border-bottom: 1px solid black;" href="#">Item 3</a>
+</div>
+
+<script type="text/javascript">
+at_attach("menu_parent", "menu_child", "hover", "y", "pointer");
+</script>
+
+<br /><br /><br /><br />
+
+<!-- Search Form -->
+
+<div class="sample_attach" id="src_parent">
+Site Search
+</div>
+<form class="sample_attach" id="src_child" action="dropdown.php">
+<b>Enter search terms:</b><br />
+<input style="margin-bottom: 1px; width: 170px;" type="text" name="terms" />
+<center><input type="submit" value="Submit" /></center>
+</form>
+
+<script type="text/javascript">
+at_attach("src_parent", "src_child", "click", "x", "pointer");
+</script>
+
+</body>
+</html>
