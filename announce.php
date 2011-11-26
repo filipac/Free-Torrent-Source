@@ -1,5 +1,4 @@
 <?php
-//github
 include ('include/bittorrent_announce.php');
 require_once ('include/benc.php');
 function err( $msg )
